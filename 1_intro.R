@@ -1,4 +1,4 @@
-finance_db <- read.csv("../data/index.csv") 
+finance_db <- read.csv("data/index.csv") 
 # glimpse(finance_db)
 summary(finance_db)
 
@@ -38,7 +38,7 @@ median_unemployment_rate_2 <- median(unemployment_rate_2, na.rm = TRUE)
 
 ggplot(finance_db, aes(x = Year, y = unemployment_rate)) + 
   geom_point() + 
-  labs(title = "Umeployment rate by year") 
+  labs(title = "Unemployment rate by year") 
 
 ggplot(finance_db, aes(x = Year, y = unemployment_rate)) + 
   geom_jitter(aes(color = Month)) + 
